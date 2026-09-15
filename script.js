@@ -1,13 +1,11 @@
 const CLAVE = "textil_s4";
 const pagina = document.body.dataset.pagina;
 let datos = null;
-
 try {
   datos = JSON.parse(sessionStorage.getItem(CLAVE));
 } catch {
   sessionStorage.removeItem(CLAVE);
 }
-
 const form = document.querySelector("#textil");
 if (form) {
   // Restaurar al editar
